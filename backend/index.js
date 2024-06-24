@@ -6,7 +6,7 @@ const path = require("path");
 const multer = require("multer");
 const app = express();
 require("dotenv").config;
-require("./auth");
+require("./auth/auth");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
